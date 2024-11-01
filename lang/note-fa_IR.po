@@ -1,0 +1,273 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Wp-Notepad premium\n"
+"POT-Creation-Date: 2018-05-27 14:28-0700\n"
+"PO-Revision-Date: 2018-05-27 14:28-0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wp-notepad-premium.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: inc/shortcode.php:86
+msgid ""
+"This is a sample note. You can delete or edit it. To access the edit and "
+"delete buttons, move the mouse over the text and use the buttons above the "
+"note. If you are using a mobile phone or tablet, click on the note to view "
+"these buttons."
+msgstr ""
+"این یک یادداشت نمونه است. شما می‌توانید آن را حذف و یا ویرایش کنید. برای "
+"دسترسی به دکمه‌های ویرایش و حذف ماوس خود را روی متن آورده و از دکمه‌هایی که "
+"بالای یادداشت ظاهر می‌شود استفاده کنید. در صورتی که از موبایل و یا تبلت "
+"استفاده می‌کنید برای مشاهده این دکمه‌ها بر روی یادداشت کلیک کنید."
+
+#: inc/shortcode.php:122 inc/shortcode.php:214
+msgid "Sorry,Something is Wrong "
+msgstr "متأسفم , یک چیزی اشتباه است"
+
+#: inc/shortcode.php:125
+msgid "Mobile number is empty"
+msgstr "شماره تلفن خالی می باشد "
+
+#: inc/shortcode.php:128
+msgid "Invalid mobile number! The number of mobile numbers must be numeric"
+msgstr "شماره تلفن نامعتبر ! شماره تفن عددی می باشد "
+
+#: inc/shortcode.php:131
+msgid "The mobile number must be 11 digits"
+msgstr "شماره تلفن 11 عدد می باشد "
+
+#: inc/shortcode.php:134
+msgid "Email is empty"
+msgstr "ایمیل وارد نشده "
+
+#: inc/shortcode.php:138
+msgid "Email is not valid"
+msgstr "ایمیل نامعتبر "
+
+#: inc/shortcode.php:142
+msgid "The password is empty"
+msgstr "کلمه عبور خالی است "
+
+#: inc/shortcode.php:145
+msgid "The entered passwords are not the same"
+msgstr "کلمه های عبور وارد شده یکسان نمی باشند "
+
+#: inc/shortcode.php:149
+msgid "This phone number is already registered"
+msgstr "شماره تلفن وارد شده موجود می باشد "
+
+#: inc/shortcode.php:153
+msgid "This email is already registered"
+msgstr "ایمیل وارد شده موجود می باشد "
+
+#: inc/shortcode.php:160
+msgid "Sign up successfully. You are now logged in successfully"
+msgstr "ثبت نام با موفقیت انجام شد . هم اکنون میتوانید وارد شوید "
+
+#: inc/shortcode.php:178
+msgid "Email or mobile number"
+msgstr "شماره تلفن یا ایمیل "
+
+#: inc/shortcode.php:179 inc/shortcode.php:196
+msgid "Password"
+msgstr "کلمه عبور"
+
+#: inc/shortcode.php:180
+msgid "Remember me"
+msgstr "مرا بخاطر بسپار"
+
+#: inc/shortcode.php:181
+msgid "Login"
+msgstr "ورود"
+
+#: inc/shortcode.php:192
+msgid "Email"
+msgstr "ایمیل"
+
+#: inc/shortcode.php:194
+msgid "Mobile"
+msgstr "شماره تلفن"
+
+#: inc/shortcode.php:198
+msgid "Password Again"
+msgstr "تکرار کلمه عبور"
+
+#: inc/shortcode.php:200
+msgid "Register"
+msgstr "عضویت"
+
+#: inc/shortcode.php:285
+msgid "New Note"
+msgstr "یاداشت جدید"
+
+#: inc/shortcode.php:287
+msgid "Click Here..."
+msgstr "اینجا کلیک کنید ..."
+
+#: inc/shortcode.php:290
+msgid "Save"
+msgstr "ذخیره"
+
+#: inc/shortcode.php:321
+msgid "Done"
+msgstr "انجام شد"
+
+#: inc/shortcode.php:321
+msgid "Not Done"
+msgstr "انجام نشد "
+
+#: inc/shortcode.php:331
+msgid "Edit Notes"
+msgstr "ویرایش یاداشت "
+
+#. Plugin Name of the plugin/theme
+#, fuzzy
+#| msgid "Notepad permium"
+msgid "Wp-Notepad premium"
+msgstr "یاداشت نگاری "
+
+#. Plugin URI of the plugin/theme
+msgid "https://notepad.titanicuk.org/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "A Plugin  for reminding and note of users on the client side"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Amir Reza Khanjan"
+msgstr ""
+
+#~ msgid "Telegram"
+#~ msgstr "تلگرام"
+
+#~ msgid "Website"
+#~ msgstr "وب سایت"
+
+#~ msgid "Bot Username"
+#~ msgstr "نام ربات"
+
+#~ msgid "Bot Token"
+#~ msgstr "توکن ربات"
+
+#~ msgid "Size Button"
+#~ msgstr "اندازه دکمه"
+
+#~ msgid "Show User Photo"
+#~ msgstr "نمایش عکس ربات"
+
+#~ msgid "User Role When Login"
+#~ msgstr "نقش کاربری هنگام ورود"
+
+#~ msgid "Redirect Url After Login"
+#~ msgstr "انتقال به ادرس بعد از ورود"
+
+#~ msgid "Update"
+#~ msgstr " بروزرسانی"
+
+#~ msgid "Steps Configration"
+#~ msgstr "مراحل تنظیمات"
+
+#~ msgid "Create New Bot By @Botfather"
+#~ msgstr "ساخت ربات با ربات ساز @Botfather"
+
+#~ msgid ""
+#~ "send the /setdomain command to @Botfather to link your website,s domain "
+#~ "to the bot. Then configure your widget by on top options."
+#~ msgstr ""
+#~ "کامند /setdomain  را در ربات ساز @Botfather بفرستید و ادرس سایت خود را "
+#~ "برای ربات ساخته شده تنظیم کنید  .  تنظیمات بالا را نیز  تکمیل کنید "
+
+#~ msgid "Use Shortcode [lg-telegram] For Show Button"
+#~ msgstr " از کد کوتاه  [lg-telegram] برای نمایش دکمه استفاده کنید"
+
+#~ msgid "A plugin for login And Register with telegram messanger Account"
+#~ msgstr "یک افزونه برای لاگین و عضویت در سایت از طریق اکانت تلگرام "
+
+#~ msgid "Behzad Rohizadeh"
+#~ msgstr "بهزاد روحی زاده "
+
+#~ msgid "Steps"
+#~ msgstr "مراحل "
+
+#~ msgid "replace default words"
+#~ msgstr "واژه نگار"
+
+#~ msgid "RDW"
+#~ msgstr "واژه نگار"
+
+#~ msgid "Delete"
+#~ msgstr "پاک کردن"
+
+#~ msgid "Deleted"
+#~ msgstr "Deleted"
+
+#~ msgid "Successfully added"
+#~ msgstr "با موفقیت اضافه شد."
+
+#~ msgid "View file"
+#~ msgstr "تماشای فایل"
+
+#~ msgid "The file undefined "
+#~ msgstr "لطفا نشانی فایل پشتیبان (xml) را وارد کنید."
+
+#~ msgid "Wordpress Plugin Development"
+#~ msgstr "طراحی و توسعه افزونه‌های اختصاصی وردپرس"
+
+#~ msgid "Enter the default word"
+#~ msgstr "واژه‌ی پیش‌فرض را وارد کنید"
+
+#~ msgid "Enter the new word"
+#~ msgstr "واژه‌ی تازه را وارد کنید"
+
+#~ msgid "Add"
+#~ msgstr "افزودن"
+
+#~ msgid "Import xml file"
+#~ msgstr "درون ریزی فایل پشتیبان (xml)"
+
+#~ msgid "Enter url xml file"
+#~ msgstr "نشانی فایل پشتیبان را وارد کنید"
+
+#~ msgid "Submit"
+#~ msgstr "ارسال درخواست"
+
+#~ msgid "Export"
+#~ msgstr "برون ریزی"
+
+#~ msgid "Number"
+#~ msgstr "شماره"
+
+#~ msgid "Default word"
+#~ msgstr "واژه‌ی پیش‌فرض"
+
+#~ msgid "Field is not posted"
+#~ msgstr "زمینه ارسال نشده است."
+
+#~ msgid "Edited successfully"
+#~ msgstr "با موفقیت ویرایش شد"
+
+#~ msgid "Error editing"
+#~ msgstr "خطا در ویرایش"
+
+#~ msgid "Mandegarweb Team"
+#~ msgstr "گروه ماندگار وب"
+
+#~ msgid "Replace Default Words"
+#~ msgstr "واژه نگار"
+
+#~ msgid "Replace the default words in the core, plugins and themes"
+#~ msgstr "جایگزین کردن واژه‌های پیش‌فرض در هسته، افزونه‌ها و پوسته‌های وردپرس"

@@ -1,0 +1,615 @@
+ 
+
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+    @font-face {
+        font-family: 'Far.SinaBold';
+        src:url('../font/Gandom.ttf');
+        font-weight: normal;
+        font-style: normal;
+        }
+.note-item
+{
+	width: 250px;
+	max-width: 300px;
+	min-height: 350px;
+	float: right;
+    border: 2px solid #86CDCD;
+    text-align: center;
+    margin: 10px 10px 20px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.07);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    padding: 15px;
+    
+}
+.note .add 
+{
+position: relative;
+right: 20px;
+}
+.note .edit
+{
+	position: relative;
+	float: none;
+}
+i.left
+{
+	float: left;
+	color: blue; 
+	font-size: 17px;
+	cursor: pointer;
+	display: none;
+}
+i.right 
+{
+	float: right;
+	color: red;
+	font-size: 17px;
+	cursor: pointer;
+	display: none;
+}
+.note-item h3 
+{
+	margin: 0px;
+    padding: 0px !important;
+    margin-bottom: 15px;
+    font-family: 'Far.SinaBold',Tahoma, Sans-Serif;
+    font-size: 17px;
+    font-weight: 600;
+}
+.note-item .icon 
+{
+	position: relative;
+    width: 100%;
+    height: 20px;
+}
+	
+.buttonHolder
+{
+	text-align: center;
+	width: 100%;
+    color: #EF5353!important
+}
+.note .date 
+{
+    color: #4460ea;
+    font-size: 17px;
+     font-family: 'Far.SinaBold',Tahoma, Sans-Serif;
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-right: 16px solid green;
+  border-bottom: 16px solid red;
+  border-left: 16px solid pink;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#loader .modal-content 
+{
+  background: none; 
+  border: 0px;
+}
+
+#foo,#fooedit,.note-item p { 
+    overflow: hidden;
+    padding: 0;
+    outline: none;
+    background-image: url("../img/paper3.jpg");
+    text-align: right;
+    direction: rtl;
+    padding-right: 5px;
+    width: 100%;
+    min-height: 250px;
+    border: none;
+    border: 2px solid  #ff944d;
+    color: #0C6868;
+    font-family: 'Far.SinaBold',Tahoma, Sans-Serif;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+.note-item p 
+{
+	border: 0px;
+}
+
+
+
+
+.can-toggle {
+  position: relative;
+}
+.can-toggle *, .can-toggle *:before, .can-toggle *:after {
+  box-sizing: border-box;
+}
+.can-toggle input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.can-toggle input[type="checkbox"][disabled] ~ label {
+  pointer-events: none;
+}
+.can-toggle input[type="checkbox"][disabled] ~ label .can-toggle__switch {
+  opacity: 0.4;
+}
+.can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:before {
+  content: attr(data-unchecked);
+  left: 0;
+}
+.can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+  content: attr(data-checked);
+}
+.can-toggle label {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.can-toggle label .can-toggle__label-text {
+  flex: 1;
+  padding-left: 32px;
+}
+.can-toggle label .can-toggle__switch {
+  position: relative;
+  margin: 0 auto;
+  
+}
+.can-toggle label .can-toggle__switch:before {
+  content: attr(data-checked);
+  position: absolute;
+  top: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+.can-toggle label .can-toggle__switch:after {
+  content: attr(data-unchecked);
+  position: absolute;
+  z-index: 5;
+  text-transform: uppercase;
+  text-align: center;
+  background: white;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.can-toggle input[type="checkbox"][disabled] ~ label {
+  color: rgba(119, 119, 119, 0.5);
+}
+.can-toggle input[type="checkbox"]:focus ~ label .can-toggle__switch, .can-toggle input[type="checkbox"]:hover ~ label .can-toggle__switch {
+  background-color: #da8888;;
+}
+.can-toggle input[type="checkbox"]:focus ~ label .can-toggle__switch:after, .can-toggle input[type="checkbox"]:hover ~ label .can-toggle__switch:after {
+  color: #5e5e5e;
+}
+.can-toggle input[type="checkbox"]:hover ~ label {
+  color: #6a6a6a;
+}
+.can-toggle input[type="checkbox"]:checked ~ label:hover {
+  color: #55bc49;
+}
+.can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch {
+  background-color: #70c767;
+}
+.can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+  color: #4fb743;
+}
+.can-toggle input[type="checkbox"]:checked:focus ~ label .can-toggle__switch, .can-toggle input[type="checkbox"]:checked:hover ~ label .can-toggle__switch {
+  background-color: #5fc054;
+}
+.can-toggle input[type="checkbox"]:checked:focus ~ label .can-toggle__switch:after, .can-toggle input[type="checkbox"]:checked:hover ~ label .can-toggle__switch:after {
+  color: #47a43d;
+}
+.can-toggle label .can-toggle__label-text {
+  flex: 1;
+}
+.can-toggle label .can-toggle__switch {
+  transition: background-color 0.3s cubic-bezier(0, 1, 0.5, 1);
+  background: #da8888;
+}
+.can-toggle label .can-toggle__switch:before {
+  color: rgba(255, 255, 255, 0.5);
+}
+.can-toggle label .can-toggle__switch:after {
+  transition: -webkit-transform 0.3s cubic-bezier(0, 1, 0.5, 1);
+  transition: transform 0.3s cubic-bezier(0, 1, 0.5, 1);
+  transition: transform 0.3s cubic-bezier(0, 1, 0.5, 1), -webkit-transform 0.3s cubic-bezier(0, 1, 0.5, 1);
+  color: #777;
+}
+.can-toggle input[type="checkbox"]:focus ~ label .can-toggle__switch:after, .can-toggle input[type="checkbox"]:hover ~ label .can-toggle__switch:after {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+}
+.can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+  -webkit-transform: translate3d(65px, 0, 0);
+          transform: translate3d(65px, 0, 0);
+}
+.can-toggle input[type="checkbox"]:checked:focus ~ label .can-toggle__switch:after, .can-toggle input[type="checkbox"]:checked:hover ~ label .can-toggle__switch:after {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+}
+.can-toggle label {
+  font-size: 14px;
+}
+.can-toggle label .can-toggle__switch {
+  height: 36px;
+  flex: 0 0 134px;
+  border-radius: 4px;
+}
+.can-toggle label .can-toggle__switch:before {
+  left: 67px;
+  font-size: 12px;
+  line-height: 36px;
+  width: 67px;
+  padding: 0 12px;
+}
+.can-toggle label .can-toggle__switch:after {
+  top: 2px;
+  left: 2px;
+  border-radius: 2px;
+  width: 65px;
+  line-height: 32px;
+  font-size: 12px;
+}
+.can-toggle label .can-toggle__switch:hover:after {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+}
+.can-toggle.can-toggle--size-small input[type="checkbox"]:focus ~ label .can-toggle__switch:after, .can-toggle.can-toggle--size-small input[type="checkbox"]:hover ~ label .can-toggle__switch:after {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+.can-toggle.can-toggle--size-small input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+  -webkit-transform: translate3d(44px, 0, 0);
+          transform: translate3d(44px, 0, 0);
+}
+.can-toggle.can-toggle--size-small input[type="checkbox"]:checked:focus ~ label .can-toggle__switch:after, .can-toggle.can-toggle--size-small input[type="checkbox"]:checked:hover ~ label .can-toggle__switch:after {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+.can-toggle.can-toggle--size-small label {
+  font-size: 13px;
+}
+.can-toggle.can-toggle--size-small label .can-toggle__switch {
+  height: 28px;
+  flex: 0 0 90px;
+  border-radius: 2px;
+}
+.can-toggle.can-toggle--size-small label .can-toggle__switch:before {
+  left: 45px;
+  font-size: 10px;
+  line-height: 28px;
+  width: 45px;
+  padding: 0 12px;
+}
+.can-toggle.can-toggle--size-small label .can-toggle__switch:after {
+  top: 1px;
+  left: 1px;
+  border-radius: 1px;
+  width: 44px;
+  line-height: 26px;
+  font-size: 10px;
+}
+.can-toggle.can-toggle--size-small label .can-toggle__switch:hover:after {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+.can-toggle.can-toggle--size-large input[type="checkbox"]:focus ~ label .can-toggle__switch:after, .can-toggle.can-toggle--size-large input[type="checkbox"]:hover ~ label .can-toggle__switch:after {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+.can-toggle.can-toggle--size-large input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+  -webkit-transform: translate3d(78px, 0, 0);
+          transform: translate3d(78px, 0, 0);
+}
+.can-toggle.can-toggle--size-large input[type="checkbox"]:checked:focus ~ label .can-toggle__switch:after, .can-toggle.can-toggle--size-large input[type="checkbox"]:checked:hover ~ label .can-toggle__switch:after {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+.can-toggle.can-toggle--size-large label {
+  font-size: 14px;
+}
+.can-toggle.can-toggle--size-large label .can-toggle__switch {
+  height: 50px;
+  flex: 0 0 160px;
+  border-radius: 4px;
+}
+.can-toggle.can-toggle--size-large label .can-toggle__switch:before {
+  left: 80px;
+  font-size: 14px;
+  line-height: 50px;
+  width: 80px;
+  padding: 0 12px;
+}
+.can-toggle.can-toggle--size-large label .can-toggle__switch:after {
+  top: 2px;
+  left: 2px;
+  border-radius: 2px;
+  width: 78px;
+  line-height: 46px;
+  font-size: 14px;
+}
+.can-toggle.can-toggle--size-large label .can-toggle__switch:hover:after {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+.can-toggle.demo-rebrand-1 input[type="checkbox"][disabled] ~ label {
+  color: rgba(181, 62, 116, 0.5);
+}
+.can-toggle.demo-rebrand-1 input[type="checkbox"]:focus ~ label .can-toggle__switch, .can-toggle.demo-rebrand-1 input[type="checkbox"]:hover ~ label .can-toggle__switch {
+  background-color: #b53e74;
+}
+.can-toggle.demo-rebrand-1 input[type="checkbox"]:focus ~ label .can-toggle__switch:after, .can-toggle.demo-rebrand-1 input[type="checkbox"]:hover ~ label .can-toggle__switch:after {
+  color: #8f315c;
+}
+.can-toggle.demo-rebrand-1 input[type="checkbox"]:hover ~ label {
+  color: #a23768;
+}
+.can-toggle.demo-rebrand-1 input[type="checkbox"]:checked ~ label:hover {
+  color: #39916a;
+}
+.can-toggle.demo-rebrand-1 input[type="checkbox"]:checked ~ label .can-toggle__switch {
+  background-color: #44ae7f;
+}
+.can-toggle.demo-rebrand-1 input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+  color: #368a65;
+}
+.can-toggle.demo-rebrand-1 input[type="checkbox"]:checked:focus ~ label .can-toggle__switch, .can-toggle.demo-rebrand-1 input[type="checkbox"]:checked:hover ~ label .can-toggle__switch {
+  background-color: #3d9c72;
+}
+.can-toggle.demo-rebrand-1 input[type="checkbox"]:checked:focus ~ label .can-toggle__switch:after, .can-toggle.demo-rebrand-1 input[type="checkbox"]:checked:hover ~ label .can-toggle__switch:after {
+  color: #2f7757;
+}
+.can-toggle.demo-rebrand-1 label .can-toggle__label-text {
+  flex: 1;
+}
+.can-toggle.demo-rebrand-1 label .can-toggle__switch {
+  transition: background-color 0.3s ease-in-out;
+  background: #c14b81;
+}
+.can-toggle.demo-rebrand-1 label .can-toggle__switch:before {
+  color: rgba(255, 255, 255, 0.6);
+}
+.can-toggle.demo-rebrand-1 label .can-toggle__switch:after {
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  color: #b53e74;
+}
+.can-toggle.demo-rebrand-2 input[type="checkbox"][disabled] ~ label {
+  color: rgba(68, 68, 68, 0.5);
+}
+.can-toggle.demo-rebrand-2 input[type="checkbox"]:focus ~ label .can-toggle__switch, .can-toggle.demo-rebrand-2 input[type="checkbox"]:hover ~ label .can-toggle__switch {
+  background-color: #444;
+}
+.can-toggle.demo-rebrand-2 input[type="checkbox"]:focus ~ label .can-toggle__switch:after, .can-toggle.demo-rebrand-2 input[type="checkbox"]:hover ~ label .can-toggle__switch:after {
+  color: #2b2b2b;
+}
+.can-toggle.demo-rebrand-2 input[type="checkbox"]:hover ~ label {
+  color: #373737;
+}
+.can-toggle.demo-rebrand-2 input[type="checkbox"]:checked ~ label:hover {
+  color: #62b125;
+}
+.can-toggle.demo-rebrand-2 input[type="checkbox"]:checked ~ label .can-toggle__switch {
+  background-color: #75d32d;
+}
+.can-toggle.demo-rebrand-2 input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+  color: #5da924;
+}
+.can-toggle.demo-rebrand-2 input[type="checkbox"]:checked:focus ~ label .can-toggle__switch, .can-toggle.demo-rebrand-2 input[type="checkbox"]:checked:hover ~ label .can-toggle__switch {
+  background-color: #69be28;
+}
+.can-toggle.demo-rebrand-2 input[type="checkbox"]:checked:focus ~ label .can-toggle__switch:after, .can-toggle.demo-rebrand-2 input[type="checkbox"]:checked:hover ~ label .can-toggle__switch:after {
+  color: #52941f;
+}
+.can-toggle.demo-rebrand-2 label .can-toggle__label-text {
+  flex: 1;
+}
+.can-toggle.demo-rebrand-2 label .can-toggle__switch {
+  transition: background-color 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+  background: #515151;
+}
+.can-toggle.demo-rebrand-2 label .can-toggle__switch:before {
+  color: rgba(255, 255, 255, 0.7);
+}
+.can-toggle.demo-rebrand-2 label .can-toggle__switch:after {
+  transition: -webkit-transform 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 0.3s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+  color: #444;
+}
+.can-toggle.demo-rebrand-2 input[type="checkbox"]:focus ~ label .can-toggle__switch:after, .can-toggle.demo-rebrand-2 input[type="checkbox"]:hover ~ label .can-toggle__switch:after {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+.can-toggle.demo-rebrand-2 input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+  -webkit-transform: translate3d(58px, 0, 0);
+          transform: translate3d(58px, 0, 0);
+}
+.can-toggle.demo-rebrand-2 input[type="checkbox"]:checked:focus ~ label .can-toggle__switch:after, .can-toggle.demo-rebrand-2 input[type="checkbox"]:checked:hover ~ label .can-toggle__switch:after {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+.can-toggle.demo-rebrand-2 label {
+  font-size: 13px;
+}
+.can-toggle.demo-rebrand-2 label .can-toggle__switch {
+  height: 60px;
+  flex: 0 0 120px;
+  border-radius: 60px;
+}
+.can-toggle.demo-rebrand-2 label .can-toggle__switch:before {
+  left: 60px;
+  font-size: 13px;
+  line-height: 60px;
+  width: 60px;
+  padding: 0 12px;
+}
+.can-toggle.demo-rebrand-2 label .can-toggle__switch:after {
+  top: 2px;
+  left: 2px;
+  border-radius: 30px;
+  width: 58px;
+  line-height: 56px;
+  font-size: 13px;
+}
+.can-toggle.demo-rebrand-2 label .can-toggle__switch:hover:after {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+
+/* The Modal (background) */
+.note .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+/* Modal Content/Box */
+.note .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 300px; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.note .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    text-align: right;
+    direction: ltr;
+    font-size: 18px;
+}
+.boxclose{
+       float: right;
+    margin-top: -30px;
+    margin-right: -30px;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #AEAEAE;
+    border-radius: 30px;
+    background: #ce444a;
+    font-size: 31px; 
+    font-weight: bold;
+    display: inline-block;
+    line-height: 0px;
+    padding: 15px 6px;       
+}
+
+.boxclose:before {
+    content: "×";
+
+}
+
+/* Add Zoom Animation */
+.imei .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+.note-user 
+{
+	width: 100%;
+}
+.note-login 
+{
+  width: 45%;
+  float: right;
+}
+.note-register 
+{
+  width: 45%;
+  float: right;
+  margin-right: 10px;
+}
+.note-user input[type=text], .note-user input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.note-user input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.red 
+{
+	color: red;
+}
+.green 
+{
+	color: green;
+}
+
+
+@media screen and (max-width:700px) {
+  .add 
+  {
+  	position: relative !important;
+  }
+}
